@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Profile</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="profile-container">
+    <div class="profile-header">
+      <img src="default-profile.jpg" id="profile-pic" alt="Profile Picture">
+      <input type="file" id="upload-pic" style="display:none;" />
+      <button id="change-photo-btn" onclick="uploadPic()">Change Photo</button>
+      <h2 id="user-name">John Doe</h2>
+      <button class="edit-btn" onclick="editProfile()">Edit Profile</button>
+    </div>
+
+    <!-- Short Bio Section -->
+    <div class="bio-section">
+      <h3>Bio</h3>
+      <p id="bio-text">A passionate learner with interests in AI and data science.</p>
+    </div>
+
+    <div class="profile-info">
+      <div class="info-section">
+        <h3>Personal Details</h3>
+        <p>Email: <span class="info-field" id="email">john@example.com</span></p>
+        <p>Contact: <span class="info-field" id="contactNum">1234567890</span></p>
+        <p>Date of Birth: <span class="info-field" id="dob">01/01/2000</span></p>
+        <p>Username: <span class="info-field" id="userName">john_doe</span></p>
+      </div>
+
+      <div class="info-section">
+        <h3>Educational Information</h3>
+        <p>Graduation Year: <span class="info-field" id="graduation-year">2024</span></p>
+        <p>Program Start Year: <span class="info-field" id="prog-start-year">2020</span></p>
+        <p>Class 10 CGPA: <span class="info-field" id="class10">9.0</span></p>
+        <p>Class 12 CGPA: <span class="info-field" id="class12">8.5</span></p>
+        <p>Department: <span class="info-field" id="department">Computer Science</span></p>
+      </div>
+
+      <div class="info-section">
+        <h3>Professional Information</h3>
+        <p>LinkedIn: <a class="info-field" id="linkedin" href="#">johnlinkedin</a></p>
+        <p>Internship: <span class="info-field" id="internship">Tech Intern at XYZ</span></p>
+        <p>Research Papers: <span class="info-field" id="research-paper">AI Research on Neural Networks</span></p>
+        <p>Certifications: <span class="info-field" id="certifications">Certified Python Developer</span></p>
+        <p>GATE Score: <span class="info-field" id="gate-score">90</span></p>
+      </div>
+
+      <div class="info-section">
+        <h3>Additional Information</h3>
+        <p>Extra Curriculars: <span class="info-field" id="extra-curriculars">Chess, Debate</span></p>
+        <p>Description: <span class="info-field" id="description">Passionate about AI and machine learning.</span></p>
+        <p>Resume: <a class="info-field" id="resume" href="#">Download Resume</a></p>
+        <p>Letter of Recommendation: <a class="info-field" id="lor" href="#">Download LOR</a></p>
+      </div>
+    </div>
+
+    <button class="save-btn" style="display:none;" onclick="saveChanges()">Save Changes</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
